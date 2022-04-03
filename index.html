@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {},
+        fontFamily:{
+          outfit:['Outfit', 'sans-serif'],
+        }
+      }
+    }
+  </script>
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <section 
+    class="
+    font-outfit 
+    w-screen h-screen 
+    bg-[#D6E2F0]
+    grid place-content-center
+    "> 
+
+    <div class="bg-[#fff] max-w-sm m-4 rounded-2xl">
+      <div class="p-4">
+        <img class="w-full rounded-xl" src="./images/image-qr-code.png" alt="">
+      </div>
+      <div class="max-w-xs mx-auto text-center text-[#1F3251]">
+        <h1 class="font-bold text-2xl px-3">Improve your front-end skills by building projects</h1>
+        <p class="text-sm px-10 py-4">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+      </div>
+    </div>
+  
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Cuba😎</a>.
+    </div>
+  </section>
+</body>
+</html>
